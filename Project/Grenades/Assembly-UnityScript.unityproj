@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{175549BB-B493-EBF8-6492-669367B1DE75}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_7;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor3/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor3/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Explosivo\Scripts\ExplosionManager.js" />
+     <Compile Include="Assets\Explosivo\Scripts\InitExp.js" />
+     <Compile Include="Assets\Explosivo\Scripts\TurtleManager.js" />
+     <Compile Include="Assets\FractalTexture.js" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\Sample Supporting Emitters\Detonator Spray Helper.js" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\TestScene\DetonatorTest.js" />
+     <Compile Include="Assets\Imported\Path\Scripts\Controlers\camera_mover.js" />
+     <Compile Include="Assets\Imported\Path\Scripts\WeaponScripts\CharacterDamage.js" />
+     <Compile Include="Assets\Imported\Path\Scripts\WeaponScripts\RocketLauncher.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Camera Scripts\MouseOrbit1.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Camera Scripts\SmoothFollow1.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Camera Scripts\SmoothLookAt1.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts\DragRigidbodyo.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts\FPSWalkero.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts\TimedObjectDestructoro.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\Alex Camera.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\FadeoutLineOfSight.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\OrbitCamera.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\SmoothFollowCamera.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\SmoothLookAt.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\SpringFollowCamera.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\SpringFollowCamera2.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Camera\WowCamera.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Enemies\EnemyDamage.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Enemies\EnemyPoliceGuy.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Enemies\EnemyRespawn.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Enemies\LaserTrap.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\GUI\FPS.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\GUI\GameHUD.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\DroppableMover.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\FenceTextureOffset.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\FuelCellGlowLookAt.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\Jumppad.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\LevelStatus.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\ObjectRotator.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\OneShotParticles.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\Pickup.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Misc\Respawn.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\Alex Controller.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\FalloutDeath.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\JetPackParticleController.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonCharacterAttack.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonController.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonController2.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonPlayerAnimation.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonPushBodies.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonStatus.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Scripts1\Player\WowCharacterController.js" />
+     <Compile Include="Assets\Made\Mesh\Mesh Modifier.js" />
+     <Compile Include="Assets\Made\Networking\Chat Stuff\Chat.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\Ben.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\CameraOnOROff Parent.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\CameraOnOROff Target.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\ConnectGuiMasterServer.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\Control Target.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\Controller.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\NetworkLevelLoad.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\SpawnPrefab.js" />
+     <Compile Include="Assets\Made\Networking\Z I&apos;m a Folder\WindowOnOROff.js" />
+     <Compile Include="Assets\Made\Scripts\Back Camera\Alex Back Camera.js" />
+     <Compile Include="Assets\Made\Scripts\Back Camera\Jenny Back Camera.js" />
+     <Compile Include="Assets\Made\Scripts\Back Camera\Rick Back Camera.js" />
+     <Compile Include="Assets\Made\Scripts\Beginning.js" />
+     <Compile Include="Assets\Made\Scripts\Block Makers\Alex Block Maker.js" />
+     <Compile Include="Assets\Made\Scripts\Block Makers\Block Collider.js" />
+     <Compile Include="Assets\Made\Scripts\Block Makers\Jenny Block Maker.js" />
+     <Compile Include="Assets\Made\Scripts\Block Makers\Rick Block Maker.js" />
+     <Compile Include="Assets\Made\Scripts\Block Makers\cubeScript.js" />
+     <Compile Include="Assets\Made\Scripts\BoundingBox.js" />
+     <Compile Include="Assets\Made\Scripts\Camera Follow (Attach To Camera).js" />
+     <Compile Include="Assets\Made\Scripts\Circular Gravity.js" />
+     <Compile Include="Assets\Made\Scripts\CubeFunctionScript.js" />
+     <Compile Include="Assets\Made\Scripts\CubeTurnOn.js" />
+     <Compile Include="Assets\Made\Scripts\Editable Cube.js" />
+     <Compile Include="Assets\Made\Scripts\Elevator.js" />
+     <Compile Include="Assets\Made\Scripts\Elias&apos;s Scripts\Explode.js" />
+     <Compile Include="Assets\Made\Scripts\Elias&apos;s Scripts\Move 1.js" />
+     <Compile Include="Assets\Made\Scripts\Elias&apos;s Scripts\boomy.js" />
+     <Compile Include="Assets\Made\Scripts\EnableDisable.js" />
+     <Compile Include="Assets\Made\Scripts\Enemy.js" />
+     <Compile Include="Assets\Made\Scripts\Follower.js" />
+     <Compile Include="Assets\Made\Scripts\Fountain.js" />
+     <Compile Include="Assets\Made\Scripts\Grenade Explosion.js" />
+     <Compile Include="Assets\Made\Scripts\Grenade Initial Force.js" />
+     <Compile Include="Assets\Made\Scripts\Initial Cubes.js" />
+     <Compile Include="Assets\Made\Scripts\Inspector.js" />
+     <Compile Include="Assets\Made\Scripts\It Block.js" />
+     <Compile Include="Assets\Made\Scripts\Jumper.js" />
+     <Compile Include="Assets\Made\Scripts\Level Loader.js" />
+     <Compile Include="Assets\Made\Scripts\Leveler\AlexLeveler.js" />
+     <Compile Include="Assets\Made\Scripts\Leveler\JennyLeveler.js" />
+     <Compile Include="Assets\Made\Scripts\Leveler\RickLeveler.js" />
+     <Compile Include="Assets\Made\Scripts\Loader.js" />
+     <Compile Include="Assets\Made\Scripts\LookAt.js" />
+     <Compile Include="Assets\Made\Scripts\MeshOff.js" />
+     <Compile Include="Assets\Made\Scripts\MouseClick.js" />
+     <Compile Include="Assets\Made\Scripts\Movers\AlexMover.js" />
+     <Compile Include="Assets\Made\Scripts\Movers\JennyMover.js" />
+     <Compile Include="Assets\Made\Scripts\Movers\Mover.js" />
+     <Compile Include="Assets\Made\Scripts\Movers\MoverAlex.js" />
+     <Compile Include="Assets\Made\Scripts\Movers\MoverFollower.js" />
+     <Compile Include="Assets\Made\Scripts\Movers\RickMover.js" />
+     <Compile Include="Assets\Made\Scripts\Moving Platform.js" />
+     <Compile Include="Assets\Made\Scripts\Moving Wall.js" />
+     <Compile Include="Assets\Made\Scripts\Out of Bounds.js" />
+     <Compile Include="Assets\Made\Scripts\Pathfinding.js" />
+     <Compile Include="Assets\Made\Scripts\Prefab Maker.js" />
+     <Compile Include="Assets\Made\Scripts\Ray Explosion.js" />
+     <Compile Include="Assets\Made\Scripts\Simple Mover(Without Gravity).js" />
+     <Compile Include="Assets\Made\Scripts\Sound Switch.js" />
+     <Compile Include="Assets\Made\Scripts\Sphere.js" />
+     <Compile Include="Assets\Made\Scripts\Spring Camera  Follow.js" />
+     <Compile Include="Assets\Made\Scripts\TeleNew.js" />
+     <Compile Include="Assets\Made\Scripts\Teleporter.js" />
+     <Compile Include="Assets\Made\Scripts\Test\Block Maker.js" />
+     <Compile Include="Assets\Made\Scripts\Test\Moldable Block.js" />
+     <Compile Include="Assets\Made\Scripts\UnitMover.js" />
+     <Compile Include="Assets\Made\Scripts\Water.js" />
+     <Compile Include="Assets\Made\Scripts\Window.js" />
+     <Compile Include="Assets\Made\Scripts\WindowNN.js" />
+     <Compile Include="Assets\MouseOrbit.js" />
+     <Compile Include="Assets\Racing\Car\Plane.js" />
+     <Compile Include="Assets\Racing\Car\PlaneAI.js" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\FirstPlaceJS.js" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\ImageEffectsOrder.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\AIController.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\AIControllerNoZ.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\AIControllerPlane.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Booster.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Car.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Car2.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Car3.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\CarAI.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\CarAINoZ.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Checkpoint.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\CrashController.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Cube Car Flip.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\FPSCounter.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\LightmapperObjectUV.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Look At Arrow.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Out Of Bounds.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\PerformanceTweak.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\PlaceHolder.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\PlayerCollider.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\PostEffectsBase.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Pusher Box.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\RaceGUI.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Skidmarks.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\SoundController.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\SoundToggler.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Teleporter Circle.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Tilt.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\TrackMaker.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Trampoline.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\TriggerScript.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Water Away.js" />
+     <Compile Include="Assets\Racing\Scripts\JavaScripts\Water Respawn.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\BopableEnemy.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\BopableEnemyHurtable.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Boss Controller.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Checkpoint Rigidbody.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Enemy Rigidbody.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\EnemyAreaScript.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\EnemyCollider.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\EnemySpawner.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\It Pointer.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\ItAssigner.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Launching Collider.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\LifeCounter.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Out of Bounds Rigidbody Mover.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\PowerUp.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Pusher.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\RigidbodyGUI.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\RigidbodyHolder.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\RigidbodyMover 1.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\RigidbodyMover.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\Teleporter Rigidbody Mover.js" />
+     <Compile Include="Assets\Rigidbody Mover\Scripts\WallJumpCollider.js" />
+     <Compile Include="Assets\SmoothRandomPosition.js" />
+     <None Include="Assets\Racing\Shaders\PolyTerrain\FirstPassLightmap.shader" />
+     <None Include="Assets\Racing\Shaders\LightsEmmissive.shader" />
+     <None Include="Assets\Imported\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
+     <None Include="Assets\Racing\Image Based\MotionBlur.shader" />
+     <None Include="Assets\Imported\Path\Materials\AdditiveProjector.shader" />
+     <None Include="Assets\Racing\Shaders\GlassReflect.shader" />
+     <None Include="Assets\Imported\Random Used Other Detonator Resources\Resources\Detonator\Textures\HeatDistort.shader" />
+     <None Include="Assets\Racing\Image Based\ColorCorrectionEffect_26.shader" />
+     <None Include="Assets\Racing\Image Based\GlowEffectDownsample_26.shader" />
+     <None Include="Assets\Imported\Standard Assets\Water\Sources\FX-Water Simple.shader" />
+     <None Include="Assets\Racing\Shaders\Skidmarks.shader" />
+     <None Include="Assets\Racing\Water\Sources\FX-Water.shader" />
+     <None Include="Assets\Racing\Shaders\GlassBuilding.shader" />
+     <None Include="Assets\Racing\Shaders\Alpha-VertexLitGlow02.shader" />
+     <None Include="Assets\Imported\Gem Rendering\diamond shader.shader" />
+     <None Include="Assets\Particle Sep-Alpha Blend.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F2B7B989-E70C-23A5-AAA7-3D861AC14874}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>9.0.21022</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{EC32D6A7-6D2E-8E37-268D-409DAD1B86B9}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace>Irrelevant</RootNamespace>
+	<AssemblyName>Irrelvant</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor30f5/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor30f5/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+	<Reference Include="Boo.Lang">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor30f5/Data/Mono/lib/mono/unity/Boo.Lang.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityScript">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor30f5/Data/Mono/lib/mono/unity/UnityScript.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\Explosivo\Scripts\._ExplosionManager.js" />
+     <None Include="Assets\Explosivo\Scripts\._InitExp.js" />
+     <None Include="Assets\Explosivo\Scripts\._TurtleManager.js" />
+     <None Include="Assets\Explosivo\Scripts\ExplosionManager.js" />
+     <None Include="Assets\Explosivo\Scripts\InitExp.js" />
+     <None Include="Assets\Explosivo\Scripts\TurtleManager.js" />
+     <None Include="Assets\Imported\Detonator Explosion Framework\Sample Supporting Emitters\Detonator Spray Helper.js" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\Detonator.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorBurstEmitter.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorCloudRing.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorFireball.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorForce.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorGlow.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorHeatwave.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorLight.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorShockwave.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorSmoke.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorSound.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorSparks.cs" />
+     <Compile Include="Assets\Imported\Detonator Explosion Framework\System\DetonatorSpray.cs" />
+     <None Include="Assets\Imported\Detonator Explosion Framework\TestScene\DetonatorTest.js" />
+     <Compile Include="Assets\Imported\Gem Rendering\Example\._GemSpawner.cs" />
+     <Compile Include="Assets\Imported\Gem Rendering\Example\GemSpawner.cs" />
+     <None Include="Assets\Imported\Gem Rendering\._diamond shader.shader" />
+     <None Include="Assets\Imported\Gem Rendering\diamond shader.shader" />
+     <Compile Include="Assets\Imported\Path\Editor\._AstarPathEditor.cs" />
+     <Compile Include="Assets\Imported\Path\Editor\._AstarWelcome.cs" />
+     <Compile Include="Assets\Imported\Path\Editor\AstarPathEditor.cs" />
+     <Compile Include="Assets\Imported\Path\Editor\AstarWelcome.cs" />
+     <None Include="Assets\Imported\Path\Materials\._AdditiveProjector.shader" />
+     <None Include="Assets\Imported\Path\Materials\AdditiveProjector.shader" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\._AstarClasses.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\._AstarMath.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\._AstarPath.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\._Seeker.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\AstarClasses.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\AstarMath.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\AstarPath.cs" />
+     <Compile Include="Assets\Imported\Path\Pathfinding\Seeker.cs" />
+     <Compile Include="Assets\Imported\Path\Scripts\Controlers\._AIAnimation.cs" />
+     <None Include="Assets\Imported\Path\Scripts\Controlers\._camera_mover.js" />
+     <Compile Include="Assets\Imported\Path\Scripts\Controlers\._clicker.cs" />
+     <Compile Include="Assets\Imported\Path\Scripts\Controlers\AIAnimation.cs" />
+     <None Include="Assets\Imported\Path\Scripts\Controlers\camera_mover.js" />
+     <Compile Include="Assets\Imported\Path\Scripts\Controlers\clicker.cs" />
+     <Compile Include="Assets\Imported\Path\Scripts\Procedural\._ProceduralLevel.cs" />
+     <Compile Include="Assets\Imported\Path\Scripts\Procedural\._ProceduralLevel2.cs" />
+     <Compile Include="Assets\Imported\Path\Scripts\Procedural\ProceduralLevel.cs" />
+     <Compile Include="Assets\Imported\Path\Scripts\Procedural\ProceduralLevel2.cs" />
+     <None Include="Assets\Imported\Path\Scripts\WeaponScripts\._CharacterDamage.js" />
+     <None Include="Assets\Imported\Path\Scripts\WeaponScripts\._RocketLauncher.js" />
+     <None Include="Assets\Imported\Path\Scripts\WeaponScripts\CharacterDamage.js" />
+     <None Include="Assets\Imported\Path\Scripts\WeaponScripts\RocketLauncher.js" />
+     <Compile Include="Assets\Imported\Path\._AIFollow.cs" />
+     <Compile Include="Assets\Imported\Path\AIFollow.cs" />
+     <None Include="Assets\Imported\Random Used Other Detonator Resources\Resources\Detonator\Textures\HeatDistort.shader" />
+     <None Include="Assets\Imported\Standard Assets\Blob-Shadow\._ShadowProjection.shader" />
+     <None Include="Assets\Imported\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
+     <Compile Include="Assets\Imported\Standard Assets\Camera Scripts\._MouseLook1.cs" />
+     <Compile Include="Assets\Imported\Standard Assets\Camera Scripts\MouseLook1.cs" />
+     <None Include="Assets\Imported\Standard Assets\Camera Scripts\MouseOrbit1.js" />
+     <None Include="Assets\Imported\Standard Assets\Camera Scripts\SmoothFollow1.js" />
+     <None Include="Assets\Imported\Standard Assets\Camera Scripts\SmoothLookAt1.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts\DragRigidbodyo.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts\FPSWalkero.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts\TimedObjectDestructoro.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._Alex Camera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._FadeoutLineOfSight.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._OrbitCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._SmoothFollowCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._SmoothLookAt.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._SpringFollowCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._SpringFollowCamera2.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\._WowCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\Alex Camera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\FadeoutLineOfSight.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\OrbitCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\SmoothFollowCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\SmoothLookAt.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\SpringFollowCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\SpringFollowCamera2.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Camera\WowCamera.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\._EnemyDamage.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\._EnemyPoliceGuy.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\._EnemyRespawn.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\._LaserTrap.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\EnemyDamage.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\EnemyPoliceGuy.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\EnemyRespawn.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Enemies\LaserTrap.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\GUI\._FPS.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\GUI\._GameHUD.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\GUI\FPS.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\GUI\GameHUD.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._DroppableMover.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._FenceTextureOffset.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._FuelCellGlowLookAt.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._Jumppad.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._LevelStatus.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._ObjectRotator.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._OneShotParticles.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._Pickup.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\._Respawn.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\DroppableMover.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\FenceTextureOffset.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\FuelCellGlowLookAt.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\Jumppad.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\LevelStatus.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\ObjectRotator.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\OneShotParticles.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\Pickup.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Misc\Respawn.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._Alex Controller.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._FalloutDeath.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._JetPackParticleController.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._ThirdPersonCharacterAttack.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._ThirdPersonController.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._ThirdPersonController2.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._ThirdPersonPlayerAnimation.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._ThirdPersonPushBodies.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._ThirdPersonStatus.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\._WowCharacterController.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\Alex Controller.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\FalloutDeath.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\JetPackParticleController.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonCharacterAttack.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonController.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonController2.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonPlayerAnimation.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonPushBodies.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\ThirdPersonStatus.js" />
+     <None Include="Assets\Imported\Standard Assets\Scripts1\Player\WowCharacterController.js" />
+     <Compile Include="Assets\Imported\Standard Assets\Water\Sources\._WaterSimple.cs" />
+     <None Include="Assets\Imported\Standard Assets\Water\Sources\FX-Water Simple.shader" />
+     <Compile Include="Assets\Imported\Standard Assets\Water\Sources\WaterSimple.cs" />
+     <None Include="Assets\Made\Mesh\._Mesh Modifier.js" />
+     <None Include="Assets\Made\Mesh\Mesh Modifier.js" />
+     <None Include="Assets\Made\Networking\Chat Stuff\._Chat.js" />
+     <None Include="Assets\Made\Networking\Chat Stuff\Chat.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._Ben.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._CameraOnOROff Parent.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._CameraOnOROff Target.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._Control Target.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._Controller.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._NetworkLevelLoad.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._SpawnPrefab.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\._WindowOnOROff.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\Ben.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\CameraOnOROff Parent.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\CameraOnOROff Target.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\ConnectGuiMasterServer.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\Control Target.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\Controller.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\NetworkLevelLoad.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\SpawnPrefab.js" />
+     <None Include="Assets\Made\Networking\Z I&apos;m a Folder\WindowOnOROff.js" />
+     <None Include="Assets\Made\Scripts\Back Camera\._Alex Back Camera.js" />
+     <None Include="Assets\Made\Scripts\Back Camera\._Jenny Back Camera.js" />
+     <None Include="Assets\Made\Scripts\Back Camera\._Rick Back Camera.js" />
+     <None Include="Assets\Made\Scripts\Back Camera\Alex Back Camera.js" />
+     <None Include="Assets\Made\Scripts\Back Camera\Jenny Back Camera.js" />
+     <None Include="Assets\Made\Scripts\Back Camera\Rick Back Camera.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\._Alex Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\._Block Collider.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\._cubeScript.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\._Jenny Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\._Rick Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\Alex Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\Block Collider.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\cubeScript.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\Jenny Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Block Makers\Rick Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Elias&apos;s Scripts\._Move 1.js" />
+     <None Include="Assets\Made\Scripts\Elias&apos;s Scripts\boomy.js" />
+     <None Include="Assets\Made\Scripts\Elias&apos;s Scripts\Explode.js" />
+     <None Include="Assets\Made\Scripts\Elias&apos;s Scripts\Move 1.js" />
+     <None Include="Assets\Made\Scripts\Leveler\._AlexLeveler.js" />
+     <None Include="Assets\Made\Scripts\Leveler\._JennyLeveler.js" />
+     <None Include="Assets\Made\Scripts\Leveler\._RickLeveler.js" />
+     <None Include="Assets\Made\Scripts\Leveler\AlexLeveler.js" />
+     <None Include="Assets\Made\Scripts\Leveler\JennyLeveler.js" />
+     <None Include="Assets\Made\Scripts\Leveler\RickLeveler.js" />
+     <None Include="Assets\Made\Scripts\Movers\._AlexMover.js" />
+     <None Include="Assets\Made\Scripts\Movers\._JennyMover.js" />
+     <None Include="Assets\Made\Scripts\Movers\._Mover.js" />
+     <None Include="Assets\Made\Scripts\Movers\._MoverAlex.js" />
+     <None Include="Assets\Made\Scripts\Movers\._MoverFollower.js" />
+     <None Include="Assets\Made\Scripts\Movers\._RickMover.js" />
+     <None Include="Assets\Made\Scripts\Movers\AlexMover.js" />
+     <None Include="Assets\Made\Scripts\Movers\JennyMover.js" />
+     <None Include="Assets\Made\Scripts\Movers\Mover.js" />
+     <None Include="Assets\Made\Scripts\Movers\MoverAlex.js" />
+     <None Include="Assets\Made\Scripts\Movers\MoverFollower.js" />
+     <None Include="Assets\Made\Scripts\Movers\RickMover.js" />
+     <None Include="Assets\Made\Scripts\Test\._Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Test\._Moldable Block.js" />
+     <None Include="Assets\Made\Scripts\Test\Block Maker.js" />
+     <None Include="Assets\Made\Scripts\Test\Moldable Block.js" />
+     <None Include="Assets\Made\Scripts\._Beginning.js" />
+     <None Include="Assets\Made\Scripts\._BoundingBox.js" />
+     <None Include="Assets\Made\Scripts\._Camera Follow (Attach To Camera).js" />
+     <None Include="Assets\Made\Scripts\._Circular Gravity.js" />
+     <None Include="Assets\Made\Scripts\._CubeFunctionScript.js" />
+     <None Include="Assets\Made\Scripts\._CubeTurnOn.js" />
+     <None Include="Assets\Made\Scripts\._Editable Cube.js" />
+     <None Include="Assets\Made\Scripts\._EnableDisable.js" />
+     <None Include="Assets\Made\Scripts\._Enemy.js" />
+     <None Include="Assets\Made\Scripts\._Follower.js" />
+     <None Include="Assets\Made\Scripts\._Fountain.js" />
+     <None Include="Assets\Made\Scripts\._Grenade Explosion.js" />
+     <None Include="Assets\Made\Scripts\._Grenade Initial Force.js" />
+     <None Include="Assets\Made\Scripts\._Initial Cubes.js" />
+     <None Include="Assets\Made\Scripts\._Inspector.js" />
+     <None Include="Assets\Made\Scripts\._It Block.js" />
+     <None Include="Assets\Made\Scripts\._Jumper.js" />
+     <None Include="Assets\Made\Scripts\._Level Loader.js" />
+     <None Include="Assets\Made\Scripts\._Loader.js" />
+     <None Include="Assets\Made\Scripts\._LookAt.js" />
+     <None Include="Assets\Made\Scripts\._MeshOff.js" />
+     <None Include="Assets\Made\Scripts\._MouseClick.js" />
+     <None Include="Assets\Made\Scripts\._Moving Platform.js" />
+     <None Include="Assets\Made\Scripts\._Moving Wall.js" />
+     <None Include="Assets\Made\Scripts\._Out of Bounds.js" />
+     <None Include="Assets\Made\Scripts\._Pathfinding.js" />
+     <None Include="Assets\Made\Scripts\._Prefab Maker.js" />
+     <None Include="Assets\Made\Scripts\._Ray Explosion.js" />
+     <Compile Include="Assets\Made\Scripts\._SelectableObject.cs" />
+     <None Include="Assets\Made\Scripts\._Simple Mover(Without Gravity).js" />
+     <None Include="Assets\Made\Scripts\._Sound Switch.js" />
+     <None Include="Assets\Made\Scripts\._Sphere.js" />
+     <None Include="Assets\Made\Scripts\._Spring Camera  Follow.js" />
+     <None Include="Assets\Made\Scripts\._TeleNew.js" />
+     <None Include="Assets\Made\Scripts\._Teleporter.js" />
+     <None Include="Assets\Made\Scripts\._UnitMover.js" />
+     <Compile Include="Assets\Made\Scripts\._UnitSelectable.cs" />
+     <None Include="Assets\Made\Scripts\._Water.js" />
+     <None Include="Assets\Made\Scripts\._Window.js" />
+     <None Include="Assets\Made\Scripts\._WindowNN.js" />
+     <None Include="Assets\Made\Scripts\Beginning.js" />
+     <None Include="Assets\Made\Scripts\BoundingBox.js" />
+     <None Include="Assets\Made\Scripts\Camera Follow (Attach To Camera).js" />
+     <None Include="Assets\Made\Scripts\Circular Gravity.js" />
+     <None Include="Assets\Made\Scripts\CubeFunctionScript.js" />
+     <None Include="Assets\Made\Scripts\CubeTurnOn.js" />
+     <None Include="Assets\Made\Scripts\Editable Cube.js" />
+     <None Include="Assets\Made\Scripts\Elevator.js" />
+     <None Include="Assets\Made\Scripts\EnableDisable.js" />
+     <None Include="Assets\Made\Scripts\Enemy.js" />
+     <None Include="Assets\Made\Scripts\Follower.js" />
+     <None Include="Assets\Made\Scripts\Fountain.js" />
+     <None Include="Assets\Made\Scripts\Grenade Explosion.js" />
+     <None Include="Assets\Made\Scripts\Grenade Initial Force.js" />
+     <None Include="Assets\Made\Scripts\Initial Cubes.js" />
+     <None Include="Assets\Made\Scripts\Inspector.js" />
+     <None Include="Assets\Made\Scripts\It Block.js" />
+     <None Include="Assets\Made\Scripts\Jumper.js" />
+     <None Include="Assets\Made\Scripts\Level Loader.js" />
+     <None Include="Assets\Made\Scripts\Loader.js" />
+     <None Include="Assets\Made\Scripts\LookAt.js" />
+     <None Include="Assets\Made\Scripts\MeshOff.js" />
+     <None Include="Assets\Made\Scripts\MouseClick.js" />
+     <None Include="Assets\Made\Scripts\Moving Platform.js" />
+     <None Include="Assets\Made\Scripts\Moving Wall.js" />
+     <None Include="Assets\Made\Scripts\Out of Bounds.js" />
+     <None Include="Assets\Made\Scripts\Pathfinding.js" />
+     <None Include="Assets\Made\Scripts\Prefab Maker.js" />
+     <None Include="Assets\Made\Scripts\Ray Explosion.js" />
+     <Compile Include="Assets\Made\Scripts\SelectableObject.cs" />
+     <None Include="Assets\Made\Scripts\Simple Mover(Without Gravity).js" />
+     <None Include="Assets\Made\Scripts\Sound Switch.js" />
+     <None Include="Assets\Made\Scripts\Sphere.js" />
+     <None Include="Assets\Made\Scripts\Spring Camera  Follow.js" />
+     <None Include="Assets\Made\Scripts\TeleNew.js" />
+     <None Include="Assets\Made\Scripts\Teleporter.js" />
+     <None Include="Assets\Made\Scripts\UnitMover.js" />
+     <Compile Include="Assets\Made\Scripts\UnitSelectable.cs" />
+     <None Include="Assets\Made\Scripts\Water.js" />
+     <None Include="Assets\Made\Scripts\Window.js" />
+     <None Include="Assets\Made\Scripts\WindowNN.js" />
+     <Compile Include="Assets\Plugins\._Perlin.cs" />
+     <Compile Include="Assets\Plugins\Perlin.cs" />
+     <None Include="Assets\Racing\Car\._Plane.js" />
+     <None Include="Assets\Racing\Car\._PlaneAI.js" />
+     <None Include="Assets\Racing\Car\Plane.js" />
+     <None Include="Assets\Racing\Car\PlaneAI.js" />
+     <Compile Include="Assets\Racing\Cars\._ImageEffectBase.cs" />
+     <Compile Include="Assets\Racing\Cars\ImageEffectBase.cs" />
+     <Compile Include="Assets\Racing\Image Based\._ColorCorrectionEffectPCMac_26.cs" />
+     <None Include="Assets\Racing\Image Based\._ColorCorrectionEffect_26.shader" />
+     <None Include="Assets\Racing\Image Based\._GlowEffectDownsample_26.shader" />
+     <Compile Include="Assets\Racing\Image Based\._ImageEffects.cs" />
+     <None Include="Assets\Racing\Image Based\._MotionBlur.shader" />
+     <Compile Include="Assets\Racing\Image Based\._MotionBlurEdge.cs" />
+     <Compile Include="Assets\Racing\Image Based\ColorCorrectionEffectPCMac_26.cs" />
+     <None Include="Assets\Racing\Image Based\ColorCorrectionEffect_26.shader" />
+     <None Include="Assets\Racing\Image Based\GlowEffectDownsample_26.shader" />
+     <Compile Include="Assets\Racing\Image Based\ImageEffects.cs" />
+     <Compile Include="Assets\Racing\Image Based\MeshCombineUtility.cs" />
+     <None Include="Assets\Racing\Image Based\MotionBlur.shader" />
+     <Compile Include="Assets\Racing\Image Based\MotionBlurEdge.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._BirdsBehaviour.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._BlobShadowController.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._CarCamera.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._ColorCorrectionEffect.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._CombineChildren.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._DisableObjects.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._EffectController.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._FirstCamera.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._FirstPlace.cs" />
+     <None Include="Assets\Racing\Scripts\CSharpScripts\._FirstPlaceJS.js" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\._Generate2DReflection.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\BirdsBehaviour.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\BlobShadowController.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\CarCamera.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\ColorCorrectionEffect.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\CombineChildren.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\DisableObjects.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\EffectController.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\FirstCamera.cs" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\FirstPlace.cs" />
+     <None Include="Assets\Racing\Scripts\CSharpScripts\FirstPlaceJS.js" />
+     <Compile Include="Assets\Racing\Scripts\CSharpScripts\Generate2DReflection.cs" />
+     <None Include="Assets\Racing\Scripts\CSharpScripts\ImageEffectsOrder.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._AIController.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._AIControllerNoZ.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._AIControllerPlane.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Booster.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Car.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Car2.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Car3.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._CarAI.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._CarAINoZ.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Checkpoint.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._CrashController.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Cube Car Flip.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._FPSCounter.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._LightmapperObjectUV.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Look At Arrow.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Out Of Bounds.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._PerformanceTweak.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._PlaceHolder.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._PlayerCollider.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Pusher Box.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._RaceGUI.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Skidmarks.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._SoundController.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._SoundToggler.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Teleporter Circle.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Tilt.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._TrackMaker.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Trampoline.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._TriggerScript.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Water Away.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\._Water Respawn.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\AIController.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\AIControllerNoZ.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\AIControllerPlane.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Booster.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Car.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Car2.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Car3.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\CarAI.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\CarAINoZ.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Checkpoint.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\CrashController.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Cube Car Flip.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\FPSCounter.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\LightmapperObjectUV.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Look At Arrow.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Out Of Bounds.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\PerformanceTweak.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\PlaceHolder.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\PlayerCollider.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\PostEffectsBase.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Pusher Box.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\RaceGUI.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Skidmarks.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\SoundController.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\SoundToggler.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Teleporter Circle.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Tilt.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\TrackMaker.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Trampoline.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\TriggerScript.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Water Away.js" />
+     <None Include="Assets\Racing\Scripts\JavaScripts\Water Respawn.js" />
+     <None Include="Assets\Racing\Shaders\PolyTerrain\._FirstPassLightmap.shader" />
+     <None Include="Assets\Racing\Shaders\PolyTerrain\FirstPassLightmap.shader" />
+     <None Include="Assets\Racing\Shaders\._Alpha-VertexLitGlow02.shader" />
+     <None Include="Assets\Racing\Shaders\._GlassBuilding.shader" />
+     <None Include="Assets\Racing\Shaders\._GlassReflect.shader" />
+     <None Include="Assets\Racing\Shaders\._LightsEmmissive.shader" />
+     <None Include="Assets\Racing\Shaders\._Skidmarks.shader" />
+     <None Include="Assets\Racing\Shaders\Alpha-VertexLitGlow02.shader" />
+     <None Include="Assets\Racing\Shaders\GlassBuilding.shader" />
+     <None Include="Assets\Racing\Shaders\GlassReflect.shader" />
+     <None Include="Assets\Racing\Shaders\LightsEmmissive.shader" />
+     <None Include="Assets\Racing\Shaders\Skidmarks.shader" />
+     <None Include="Assets\Racing\Water\Sources\._FX-Water.shader" />
+     <Compile Include="Assets\Racing\Water\Sources\._Water.cs" />
+     <None Include="Assets\Racing\Water\Sources\FX-Water.shader" />
+     <Compile Include="Assets\Racing\Water\Sources\Water.cs" />
+     <Compile Include="Assets\Racing\._GlowEffectThreshold_26.cs" />
+     <Compile Include="Assets\Racing\GlowEffectThreshold_26.cs" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._BopableEnemy.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._BopableEnemyHurtable.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Boss Controller.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Checkpoint Rigidbody.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Enemy Rigidbody.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._EnemyAreaScript.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._EnemyCollider.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._EnemySpawner.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._It Pointer.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._ItAssigner.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Launching Collider.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._LifeCounter.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Out of Bounds Rigidbody Mover.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._PowerUp.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Pusher.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._RigidbodyGUI.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._RigidbodyHolder.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._RigidbodyMover 1.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._RigidbodyMover.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._Teleporter Rigidbody Mover.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\._WallJumpCollider.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\BopableEnemy.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\BopableEnemyHurtable.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Boss Controller.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Checkpoint Rigidbody.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Enemy Rigidbody.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\EnemyAreaScript.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\EnemyCollider.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\EnemySpawner.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\It Pointer.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\ItAssigner.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Launching Collider.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\LifeCounter.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Out of Bounds Rigidbody Mover.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\PowerUp.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Pusher.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\RigidbodyGUI.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\RigidbodyHolder.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\RigidbodyMover 1.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\RigidbodyMover.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\Teleporter Rigidbody Mover.js" />
+     <None Include="Assets\Rigidbody Mover\Scripts\WallJumpCollider.js" />
+     <None Include="Assets\._FractalTexture.js" />
+     <None Include="Assets\._MouseOrbit.js" />
+     <None Include="Assets\._Particle Sep-Alpha Blend.shader" />
+     <None Include="Assets\._SmoothRandomPosition.js" />
+     <None Include="Assets\FractalTexture.js" />
+     <None Include="Assets\MouseOrbit.js" />
+     <None Include="Assets\Particle Sep-Alpha Blend.shader" />
+     <None Include="Assets\SmoothRandomPosition.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
+	
